@@ -18,6 +18,7 @@ jobs:
 
   version:
     name: CI
+    needs: [commit-check, version-check]
     uses: katastroma/skeuotheke/.github/workflows/version.yaml@v0
     permissions:
       contents: write
