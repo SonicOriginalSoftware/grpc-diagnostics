@@ -6,24 +6,15 @@ option go_package = "git.sonicoriginal.software/grpc-protos/info";
 
 // Info service provides service information
 service InfoService {
-  // Get service information
-  rpc GetInfo(GetInfoRequest) returns (GetInfoResponse);
+  // Get service version
+  rpc Version(VersionRequest) returns (VersionResponse);
 }
 
 // Request for service information
-message GetInfoRequest {}
+message VersionRequest {}
 
 // Response containing service information
-message GetInfoResponse {
-  // Core service information
-  ServiceInformation Info = 1;
-}
-
-// Information about the service
-message ServiceInformation {
+message VersionResponse {
   // Service version
   string version = 1;
-
-  // Additional service details
-  map<string, string> details = 2;
 }
