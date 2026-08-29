@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.2.0 - 2026-08-29
+#### Features
+- Info request replaced by explicit version request - (4095566) - Nathan Blair
+#### Continuous Integration
+- fix release job name - (983cf33) - Nathan Blair
+- require prereq jobs before versioning - (93a865c) - Nathan Blair
+
+- - -
+
 ## 0.1.0 - 2026-03-29
 #### Features
 - initial re-release - (9477461) - Nathan Blair
